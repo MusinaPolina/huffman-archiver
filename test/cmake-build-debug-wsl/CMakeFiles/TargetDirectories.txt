@@ -1,0 +1,3 @@
+/mnt/c/Users/pmusi/Desktop/mcs/c/hw-02_huffman/test/cmake-build-debug-wsl/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/pmusi/Desktop/mcs/c/hw-02_huffman/test/cmake-build-debug-wsl/CMakeFiles/edit_cache.dir
+/mnt/c/Users/pmusi/Desktop/mcs/c/hw-02_huffman/test/cmake-build-debug-wsl/CMakeFiles/tests_run.dir
