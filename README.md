@@ -1,20 +1,21 @@
-Программа запускается с флагами:
+The program starts with the flags:
 ```
 ./hw-02_huffman [flags]
 ```
-где флаги:
-* `-c`: сжатие,
-* `-u`: разжатие,
-* `-f <path>`, `--file <path>`: имя входного файла,
-* `-o <path>`, `--output <путь>`: имя результирующего файла.
-Флаги могут указываться в любом порядке.
+Where the flags are:
+* `-c`: compression,
+* `-u`: uncompress,
+* `-f <path>`, `--file <path>`: input file name,
+* `-o <path>`, `--output <path>`: name of resulting file. 
 
-Программа выводит на экран статистику сжатия/распаковки: размер исходных данных, размер
-полученных данных и размер, который был использован для хранения вспомогательных данных в выходном
-файле.
-Все размеры в байтах.
+Flags can be specified in any order.
 
-Например:
+The program displays the compression/uncompressed statistics: the size of the original data, the size
+the size of the original data and the size that has been used to store auxiliary data in the output
+size of the input data and the size of the received data.
+All sizes are in bytes.
+
+For example:
 ```
 $ ./huffman -c -f myfile.txt -o result.bin
 15678
@@ -22,9 +23,9 @@ $ ./huffman -c -f myfile.txt -o result.bin
 482
 ```
 
-Размер исходного файла (исходные данные): 15678 байт, размер сжатых данных (без дополнительной
-информации): 6172 байта, размер дополнительных данных: 482 байта. Размер всего сжатого файла: 6172 +
-482 = 6654 байта.
+Source file size (raw data): 15678 bytes, compressed data size (without additional
+information): 6172 bytes, additional data size: 482 bytes. Total compressed file size: 6172 +
+482 = 6654 bytes.
 
 ```
 $ ./huffman -u -f result.bin -o myfile_new.txt
@@ -33,6 +34,6 @@ $ ./huffman -u -f result.bin -o myfile_new.txt
 482
 ```
 
-Размер распакованного файла (полученные данные): 15678 байт, размер сжатых данных (без 
-дополнительной информации): 6172 байта, размер дополнительных данных: 482 байта. Размер всего
-исходного сжатого файла: 6172 + 482 = 6654 байта.
+Unpacked file size (received data): 15678 bytes, compressed data size (without
+additional information): 6172 bytes, additional data size: 482 bytes. The size of the total
+of the original compressed file: 6172 + 482 = 6654 bytes.
